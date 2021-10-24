@@ -51,7 +51,7 @@
         5 1 E
 
 
-    DEVNOTE: "I changed LMR to AWD controls because I'M A GAMER" 
+    DEVNOTE: "I changed LMR to AWD controls because I'M A GAMER" - Sandeep
 */
 
 
@@ -66,11 +66,8 @@
 using namespace std;
 
 
-
-
-int main(){
-
-    cout<<"Enter Rover Initial Location X:Y on mars: ";
+int temp_menu(){    
+    cout<<"Enter Rover's Initial Location X:Y on mars: ";
     int x, y;
     cin>> x >> y;
 
@@ -81,12 +78,14 @@ int main(){
     cout<< "Rover is Facing Direction: "<< r1.getRoverDirection()<<endl<<endl;
     
 
-    char ch = 'W';
+
 
     cout<<"\nControls:\n[W] Move Forward one unit.\n[A] Turn Rover Right\n[D] Turn Rover Left\n" ;
     cout<<"[S] Get Status of Rover.\n[H] For Commands\n[Q] Shutdown Rover.\n";
     cout<<"\nEnter Command-> ";
+    
     // Temp Menu Implementation. 
+    char ch = 'W';
     while(true){
         cout<<endl;
         cin>> ch;
@@ -119,6 +118,12 @@ int main(){
             default: cout<<"\nInvalid Command: "<<ch<<endl;
         }
     }
+}
 
+
+int main(){
+
+
+    temp_menu();
     return 0;
 }

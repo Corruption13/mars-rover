@@ -1,8 +1,10 @@
+// Rover class, composing of coordinates and direction class.
+
 #ifndef ROVER_H
 #define ROVER_H
 #include "coordinates.h"
 #include "direction.h"
-using namespace std;
+//using namespace std;
 
 
 class Rover{
@@ -22,6 +24,26 @@ private:
     Direction facing;
 };
 
+
+/* IMPLEMENTION BELOW BECAUSE TOO LAZY TO CREATE .CPP FILE FOR EACH HEADER */ 
+/* IMPLEMENTION BELOW BECAUSE TOO LAZY TO CREATE .CPP FILE FOR EACH HEADER */ 
+/* IMPLEMENTION BELOW BECAUSE TOO LAZY TO CREATE .CPP FILE FOR EACH HEADER */ 
+/* IMPLEMENTION BELOW BECAUSE TOO LAZY TO CREATE .CPP FILE FOR EACH HEADER */ 
+/* IMPLEMENTION BELOW BECAUSE TOO LAZY TO CREATE .CPP FILE FOR EACH HEADER */ 
+/* IMPLEMENTION BELOW BECAUSE TOO LAZY TO CREATE .CPP FILE FOR EACH HEADER */ 
+/* IMPLEMENTION BELOW BECAUSE TOO LAZY TO CREATE .CPP FILE FOR EACH HEADER */ 
+/* IMPLEMENTION BELOW BECAUSE TOO LAZY TO CREATE .CPP FILE FOR EACH HEADER */ 
+/* IMPLEMENTION BELOW BECAUSE TOO LAZY TO CREATE .CPP FILE FOR EACH HEADER */ 
+/* IMPLEMENTION BELOW BECAUSE TOO LAZY TO CREATE .CPP FILE FOR EACH HEADER */ 
+/* IMPLEMENTION BELOW BECAUSE TOO LAZY TO CREATE .CPP FILE FOR EACH HEADER */ 
+/* IMPLEMENTION BELOW BECAUSE TOO LAZY TO CREATE .CPP FILE FOR EACH HEADER */ 
+/* IMPLEMENTION BELOW BECAUSE TOO LAZY TO CREATE .CPP FILE FOR EACH HEADER */ 
+/* IMPLEMENTION BELOW BECAUSE TOO LAZY TO CREATE .CPP FILE FOR EACH HEADER */ 
+
+
+
+
+
 char Rover::getRoverDirection(){
     switch(facing.getDirection()){
         case N: return 'N'; break;
@@ -34,6 +56,8 @@ char Rover::getRoverDirection(){
 }
 
 
+
+
 Coordinates Rover::getCurrentLocation(){
     return current_location;
 }
@@ -42,13 +66,7 @@ Rover::Rover(int x, int y, Direction d): current_location(0,0), facing(N){
     current_location = Coordinates(x,  y);
     facing = d;
 }
-/*
-void Rover::turnLeft(){
-    int val = facing -1;
-    if(val == -1) val = 3;
-    facing = (Direction)(val) ;
-};
-*/
+
 void Rover::turnLeft(){
     int val = facing.getDirection() - 1;
     if(val == -1) val = 3;

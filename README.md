@@ -2,8 +2,11 @@
 
 
 
-Simple Mars Rover OOPS Question Implemented by Sandeep Pillai without external reference. (2 Hours Whiteboard to end.)
+Simple Mars Rover OOPS Question Implemented by me without external reference. (2 Hours Whiteboard to end.)
+
 [Inheritance, Composition, Abstraction.] 
+
+
 
 
 ## Problem Statement
