@@ -74,6 +74,13 @@ Simple Mars Rover OOPS Question Implemented by me without external reference. (2
 ## Requirements
 
     No External Modules used. 
+    
 
+### Learning OOPS Grind
 
+This repo was made while preparing for job interviews. You can find additional assignments I did below:
+
+Snake Game OOPS LLD: https://github.com/Corruption13/Snake-Game-CPP
+
+If you want me to upload the remaining projects, send me an email.
 
